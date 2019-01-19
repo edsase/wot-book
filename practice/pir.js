@@ -1,4 +1,4 @@
-var Gpio = reqire('onoff').Gpio;
+var Gpio = require('onoff').Gpio;
 //init input pin 24 to both (means both rising and falling edge)
 var sensor = new Gpio(24, 'in', 'both');
 
