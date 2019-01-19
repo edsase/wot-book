@@ -1,6 +1,6 @@
 var sensorLib = require('node-dht-sensor');
 
-sensorLib.initialixe(22,5);
+sensorLib.initialize(22,5);
 var interval = setInterval(function(){
     read();
 }, 2000);
