@@ -24,6 +24,8 @@ var turnOnLED = function(value){
 function exit(err){
     if (err) console.log('An error occured ' + err);
     sensor.unexport();
+    led.writeSync(0);
+    led.unexport();
     console.log('Bye bye!')
     process.exit();
 }
